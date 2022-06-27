@@ -5,21 +5,22 @@ function compareTrue(girafa, elefante) {
   } else {
     return false
   }
-
   // seu código aqui
 }
 
 // Desafio 2
 function calcArea(base, heigth) {
- return (base * heigth / 2);
-  // seu código aqui
-}
-console.log (calcArea(10, 50))
-// Desafio 3
-function splitSentence() {
+  return (base * heigth / 2);
   // seu código aqui
 }
 
+// Desafio 3
+function splitSentence(frase) {
+  let array = frase.split(' ');
+  return array
+  // seu código aqui
+}
+console.log(splitSentence('go trybe'));
 // Desafio 4
 function concatName() {
   // seu código aqui
