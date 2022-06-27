@@ -76,7 +76,7 @@ function fizzBuzz(arrayNumeros) {
       resultado.push('bug!');
     }
   }
-  return resultado
+  return resultado;
   // seu código aqui
 }
 
@@ -89,7 +89,17 @@ function decode() {
 }
 
 // Desafio 10
-function techList() {
+function techList(arrayTech, nome) {
+  
+  let lista = [];
+  if(arrayTech == 0 || nome.lenght == 0){
+    return 'Vazio!'
+  }
+arrayTech.sort()
+  for(key of arrayTech) {
+    lista.push({ tech: key, name: nome })
+  }
+  return lista
   // seu código aqui
 }
 
