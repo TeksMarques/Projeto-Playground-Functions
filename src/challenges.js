@@ -3,7 +3,7 @@ function compareTrue(girafa, elefante) {
   if (girafa === true && elefante === true) {
     return true;
   } else {
-    return false
+    return false;
   }
   // seu código aqui
 }
@@ -17,15 +17,18 @@ function calcArea(base, heigth) {
 // Desafio 3
 function splitSentence(frase) {
   let array = frase.split(' ');
-  return array
-  // seu código aqui
-}
-console.log(splitSentence('go trybe'));
-// Desafio 4
-function concatName() {
+  return array;
   // seu código aqui
 }
 
+// Desafio 4
+
+function concatName(nomes) {
+  return nomes[nomes.length-1] + ', ' + nomes[0];
+}
+  // seu código aqui
+
+console.log(concatName(['foguete', 'não', 'tem', 'ré']));
 // Desafio 5
 function footballPoints() {
   // seu código aqui
