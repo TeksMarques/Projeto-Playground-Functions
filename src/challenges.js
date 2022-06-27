@@ -10,7 +10,7 @@ function compareTrue(girafa, elefante) {
 
 // Desafio 2
 function calcArea(base, heigth) {
-  return (base * heigth / 2);
+  return (base * heigth) / 2;
   // seu código aqui
 }
 
@@ -23,21 +23,33 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(nomes) {
-  return nomes[nomes.length-1] + ', ' + nomes[0];
+  return nomes[nomes.length - 1] + ', ' + nomes[0];
   // seu código aqui
 }
-  
+
 // Desafio 5
 function footballPoints(wins, ties) {
-return (wins*3 + ties);
+  return wins * 3 + ties;
   // seu código aqui
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+
+function highestCount(numeros) {
+  let numeroMaior = Math.max.apply(null, numeros);
+  let cont = 0;
+
+  for (index = 0; index < numeros.length; index += 1) {
+      if (numeroMaior === numeros[index]) {
+      cont = cont + 1;
+    }
+  }
+  return cont;
 }
 
+// seu código aqui
+
+console.log(highestCount([3, 7, 13, 9, 100, 145, 123, 145]));
 // Desafio 7
 function catAndMouse() {
   // seu código aqui
