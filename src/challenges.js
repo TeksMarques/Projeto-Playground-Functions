@@ -5,32 +5,27 @@ function compareTrue(girafa, elefante) {
   } else {
     return false;
   }
-  // seu código aqui
 }
 
 // Desafio 2
 function calcArea(base, heigth) {
   return (base * heigth) / 2;
-  // seu código aqui
 }
 
 // Desafio 3
 function splitSentence(frase) {
   let array = frase.split(' ');
   return array;
-  // seu código aqui
 }
 
 // Desafio 4
 function concatName(nomes) {
   return nomes[nomes.length - 1] + ', ' + nomes[0];
-  // seu código aqui
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
   return wins * 3 + ties;
-  // seu código aqui
 }
 
 // Desafio 6
@@ -46,7 +41,6 @@ function highestCount(numeros) {
   }
   return cont;
 }
-// seu código aqui
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
@@ -59,7 +53,6 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat1';
   }
   return 'os gatos trombam e o rato foge';
-  // seu código aqui
 }
 
 // Desafio 8
@@ -77,16 +70,15 @@ function fizzBuzz(arrayNumeros) {
     }
   }
   return resultado;
-  // seu código aqui
 }
 
 // Desafio 9
 function encode(string) {
   let paraCod = string;
-  let cod = ''
+  let cod = '';
   for (let index = 0; index < paraCod.length; index += 1) {
     if (paraCod[index] === 'a') {
-      cod += 1
+      cod += 1;
     } else if (paraCod[index] === 'e') {
       cod += '2';
     } else if (paraCod[index] === 'i') {
@@ -96,21 +88,20 @@ function encode(string) {
     } else if (paraCod[index] === 'u') {
       cod += '5';
     } else {
-      cod += paraCod[index]
+      cod += paraCod[index];
     }
   }
-  return cod
-  // seu código aqui
+  return cod;
 }
 
 console.log(encode('hi there!'));
 
 function decode(string) {
   let paraDecod = string;
-  let decod = ''
+  let decod = '';
   for (let index = 0; index < paraDecod.length; index += 1) {
     if (paraDecod[index] === '1') {
-      decod += 'a'
+      decod += 'a';
     } else if (paraDecod[index] === '2') {
       decod += 'e';
     } else if (paraDecod[index] === '3') {
@@ -120,13 +111,12 @@ function decode(string) {
     } else if (paraDecod[index] === '5') {
       decod += 'u';
     } else {
-      decod += paraDecod[index]
+      decod += paraDecod[index];
     }
   }
-  return decod
-  // seu código aqui
+  return decod;
 }
-console.log(decode('h3 th2r2!'))
+console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList(arrayTech, nome) {
@@ -139,7 +129,6 @@ function techList(arrayTech, nome) {
     lista.push({ tech: key, name: nome });
   }
   return lista;
-  // seu código aqui
 }
 
 module.exports = {
