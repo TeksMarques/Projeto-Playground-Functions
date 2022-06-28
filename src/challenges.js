@@ -94,8 +94,6 @@ function encode(string) {
   return cod;
 }
 
-console.log(encode('hi there!'));
-
 function decode(string) {
   let paraDecod = string;
   let decod = '';
@@ -116,7 +114,6 @@ function decode(string) {
   }
   return decod;
 }
-console.log(decode('h3 th2r2!'));
 
 // Desafio 10
 function techList(arrayTech, nome) {
