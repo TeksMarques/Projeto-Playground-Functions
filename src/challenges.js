@@ -82,41 +82,51 @@ function fizzBuzz(arrayNumeros) {
 
 // Desafio 9
 function encode(string) {
-  let codificando = string.split('');
-  for (let index in string) {
-    if (codificando[index] === 'a'){
-      codificando[index] = 1;
-    } else if (codificando[index] === 'e') {
-      codificando[index] = 2;
-    } else if (codificando[index] === 'i') {
-      codificando[index] = 3;
-    } else if (codificando[index] === 'o') {
-      codificando[index] = 4;
-    } else if (codificando[index] === 'u') {
-      codificando = 5;
+  let paraCod = string;
+  let cod = ''
+  for (let index = 0; index < paraCod.length; index += 1) {
+    if (paraCod[index] === 'a') {
+      cod += 1
+    } else if (paraCod[index] === 'e') {
+      cod += '2';
+    } else if (paraCod[index] === 'i') {
+      cod += '3';
+    } else if (paraCod[index] === 'o') {
+      cod += '4';
+    } else if (paraCod[index] === 'u') {
+      cod += '5';
+    } else {
+      cod += paraCod[index]
     }
   }
-  return codificando.join('')
+  return cod
   // seu código aqui
 }
+
+console.log(encode('hi there!'));
+
 function decode(string) {
-  let decodificando = string.split('');
-  for (let index in string) {
-    if (decodificando[index] === '1'){
-      decodificando[index] = 'a';
-    } else if (decodificando[index] === '2') {
-      decodificando[index] = 'e';
-    } else if (decodificando[index] === '3') {
-      decodificando[index] = 'i';
-    } else if (decodificando[index] === '4') {
-      decodificando[index] = 'o';
-    } else if (decodificando[index] === '5') {
-      decodificando = 'u';
+  let paraDecod = string;
+  let decod = ''
+  for (let index = 0; index < paraDecod.length; index += 1) {
+    if (paraDecod[index] === '1') {
+      decod += 'a'
+    } else if (paraDecod[index] === '2') {
+      decod += 'e';
+    } else if (paraDecod[index] === '3') {
+      decod += 'i';
+    } else if (paraDecod[index] === '4') {
+      decod += 'o';
+    } else if (paraDecod[index] === '5') {
+      decod += 'u';
+    } else {
+      decod += paraDecod[index]
     }
   }
-  return decodificando.join('')
+  return decod
   // seu código aqui
 }
+console.log(decode('h3 th2r2!'))
 
 // Desafio 10
 function techList(arrayTech, nome) {
@@ -125,7 +135,7 @@ function techList(arrayTech, nome) {
     return 'Vazio!';
   }
   arrayTech.sort();
-  for (key of arrayTech) {
+  for (let key of arrayTech) {
     lista.push({ tech: key, name: nome });
   }
   return lista;
