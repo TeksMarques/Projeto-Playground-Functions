@@ -2,9 +2,8 @@
 function compareTrue(girafa, elefante) {
   if (girafa === true && elefante === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
 
 // Desafio 2
@@ -34,9 +33,9 @@ function highestCount(numeros) {
   let numeroMaior = Math.max.apply(null, numeros);
   let cont = 0;
 
-  for (index = 0; index < numeros.length; index += 1) {
+  for (let index = 0; index < numeros.length; index += 1) {
     if (numeroMaior === numeros[index]) {
-      cont = cont + 1;
+      cont = +1;
     }
   }
   return cont;
@@ -118,7 +117,7 @@ function decode(string) {
 // Desafio 10
 function techList(arrayTech, nome) {
   let lista = [];
-  if (arrayTech == 0 || nome.lenght == 0) {
+  if (arrayTech === 0 || nome.lenght === 0) {
     return 'Vazio!';
   }
   arrayTech.sort();
